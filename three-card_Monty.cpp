@@ -13,7 +13,7 @@ int main() {
         if(a % 2 == 0) t = 1;
         m = inDegree(m, a, mod);
     }
-    // formula (2^P + 2*(-1)^P)/(3*2^P) where P - permutation
+    // formula (2^P + 2*(-1)^P)/(3*2^P) where P is permutation
     m *= ((mod + 1) / 2); // divide by 2
     m %= mod;
     p = m + t; // t = (-1)^P
