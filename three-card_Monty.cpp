@@ -23,7 +23,6 @@ int main() {
     return 0;
 }
 
-
 long long inDegree(long long m, long long d, long long mod){
     if(d == 1) return m % mod;
     if(d % 2 == 1) return (m * inDegree(m, d - 1, mod)) % mod;
